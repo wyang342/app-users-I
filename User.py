@@ -1,10 +1,6 @@
 # your User class goes here
 class User:
-    name = "Bob"
-    email_address = "bob@google.com"
-    license_number = 123123123
-
-    def __init__(self, name, email_address, license_number):
+    def __init__(self, name="Default", email_address="example@example.com", license_number=123123123):
         self.name = name
         self.email_address = email_address
         self.license_number = license_number
@@ -17,4 +13,8 @@ class User:
 
 
 rob = User("Rob", "rob@gmail.com", 123321123)
+john = User("John", "john@outlook.com", 333333333)
+mack = User("Mack", "mack@mail.com", 444444333)
 print(rob)
+print(john)
+print(mack)
